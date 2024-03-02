@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drawer</title>
+  </head>
+  <body>
+    <!-- <script src="main.js"></script> -->
+    <container class="container">
+      <div class="mobile_head">
+        <div id="mySidenav" class="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#" id="liNote" class="note" onclick="note()">Notes</a>
+          <a href="#" id="liAddNote" class="add_note" onclick="addnote()">Add Note</a>
+        </div>
+        <div class="mobile_header">
+          <p class="mobile_header_list" onclick="openNav()">&#9776;</p>
+          <h3 class="mobile_header_title">Almdrasa-Note</h3>
+          <i class="fa fa-search mobile_header_icon"></i>
+        </div>
+      </div>
+      <header class="header">
+        <h1 class="header_logo">Almdrasa-Notes</h1>
+        <div class="header_search">
+          <i class="fa fa-search header_icon"></i>
+          <input type="search" class="header_input" placeholder="Search" />
+        </div>
+        <div class="header_menu">
+          <a href="#" class="header_menu_notes " id="header_menu_notes" onclick="note()">Notes</a>
+          <a href="#" class="header_menu_add_note" id="header_menu_add_note" onclick="addnote()">Add Note</a>
+        </div>
+      </header>
+      <div class="archive" id="archive">
+        <div class="archive_pined">
+          <h3 class="archive_massage_pined">PINNED</h3>
+        </div>
+        <div class="archive_notes">
+          <h3 class="archive_massage_notes">Notes</h3>
+        </div>
+      </div>
+      <div class="body" id="body">
+        
+        <div class="body_add" onclick="addnote()"><a href="#">+</a></div>
+      </div>
+      <div class="body2" id="body2">
+        <form class="body2_card">
+            <h1 class="body2_mainTitle">Add Note</h1>
+            <div class="body2_title">
+                <p>Title *</p>
+                <input type="text" class="body2_title_input">
+            </div>
+            <div class="body2_author">
+                <p>Author *</p>
+                <input type="text" class="body2_author_input">
+            </div>
+            <div class="body2_desc">
+                <p>Your Note *</p>
+                <textarea type="text" class="body2_textarea"></textarea>
+            </div>
+          <div class="body2_button">
+          <button type="submit" class="body2_btnAdd">Add note</button>
+        </div>
+          </form>
+      </div>
+     </container>
+     <script src="main.js"></script>
+   </body>
+</html>
